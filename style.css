@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+/* ### Primary */
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+/* ### Neutral */
+
+--Transparent-white : hsla(0, 0%, 100%, 0.75);/*(paragraphs)*/
+--Very-light-gray : hsl(0, 0%, 95%);/*(background, headings, buttons)*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.container{
+    width: 300px;
+    height: 450px;
+    color: white;
+}
+
+.orange{
+    background-color: var(--Bright-orange);
+    padding: 30px;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.cyan{
+    background-color: var(--Dark-cyan);
+    padding: 30px;
+}
+
+.green{
+    background-color: var(--Very-dark-cyan);
+    padding: 30px;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+img{
+    margin-top: 5%;
+}
+
+h1{
+    margin-top: 10%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: var(--Transparent-white);
+    margin-top: 10%;
+    margin-right: 12%;
+}
+
+button{
+    padding: 15px 40px;
+    background-color: var(--Very-light-gray);
+    border: 1px solid var(--Very-light-gray);
+    border-radius: 1.5rem;
+    margin-top: 30%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sedan-button{
+    color: var(--Bright-orange);
+}
+
+.suv-button{
+    color: var(--Dark-cyan);
+}
+
+.luxury-button{
+    color: var(--Very-dark-cyan);
+}
+
+button:hover{
+    background-color: transparent;
+    border: 1px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+
+.attribution{
+    position: absolute;
+    margin-top: 40%;
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        flex-direction: column;
+        margin-right: 11%;
+    }
+
+    .container{
+        width: 90%;
+        height: 30%;
+    }
+
+    .orange{
+        border-radius: 0.5rem 0.5rem 0 0;
+        margin-top: 10%;
+    }
+
+    .green{
+        border-radius: 0 0 0.5rem 0.5rem;
+        margin-bottom: 10%;
+    }
+}
